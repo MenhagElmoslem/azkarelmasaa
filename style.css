@@ -90,12 +90,7 @@ body {
   }
   
   /* تنسيق التذييل */
-  footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #2b2997;
-    color: white;
-  }
+
   /* عداد الأذكار الإجمالي */
 .total-counter {
   font-size: 1.5em;
@@ -118,4 +113,21 @@ body {
 
 .dzikr.hidden {
   opacity: 0;
+}
+
+/* تثبيت البادئة في أسفل الموقع */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* تضمن أن المحتوى يملأ الشاشة بالكامل */
+    margin: 0;
+}
+
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2b2997;
+    color: white;
+    margin-top: auto; /* يدفع البادئة إلى الأسفل */
+    width: 100%;
 }
